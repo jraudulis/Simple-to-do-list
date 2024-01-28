@@ -1,5 +1,7 @@
 body{
  display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
  align-items: center;
  justify-content: center;
 }
@@ -12,7 +14,7 @@ h1{
 }
 
 ul{
-  grid-column: 1 / span 2;
+ margin-top: 3rem;
 }
 
 li{
@@ -20,7 +22,7 @@ li{
  font-weight: 700;
  font-size: 2rem;
 }
-
+/*
 #wrapper{
  box-shadow: 1px 1px 15px lightgrey;
  border-radius: 5px;
@@ -32,13 +34,14 @@ li{
  grid-gap: 30px;
  grid-template-columns: 1fr 1fr;
  grid-template-rows: 1fr auto;
-
 }
+*/
 
 #input{
+ display: inline-block;
  border: thin .1px;
  padding: .5rem;
- width: 100%;
+ width: 50%;
  height: 2.2rem;
 }
 
@@ -48,6 +51,7 @@ li{
  color: white;
  border: none;
  width: 8rem;
+ margin: .5rem;
  font-size: 1.5rem;
  padding: .5rem;
  border-radius: 3px;
@@ -102,21 +106,20 @@ li{
 @media only screen and (max-width: 450px){
 
 #btn{
- font-size: 1rem;
- width: 5rem;
- padding: 0;
-}
-
-#wrapper{
- text-align: center;
+ font-size: 1.5rem;
+ width: 6rem;
 }
 
 h1{
- font-size: 2rem;
+ font-size: 2.5rem;
 }
 
 .del-button, .done-button{
  padding: .3rem;
+}
+
+ul{
+align-self: flex-start;
 }
 
 li{
