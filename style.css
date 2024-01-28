@@ -60,6 +60,7 @@ li{
 
 #btn:hover{
  background-color: #03915d;
+ font-size: 1.6rem;
 }
 
 .done-button{
@@ -76,15 +77,18 @@ li{
  border: none;
  border-radius: 3px;
  padding: .5rem;
- margin: .4rem .8rem; 
+ margin: .4rem .8rem;
+ transition: .2s;
 }
 
 .done-button:hover{
  background-color: #03915d;
+ font-size: .9rem;
 }
 
 .del-button:hover{
  background-color: #FF2E2E;
+ font-size: .9rem;
 }
 
 .finished{
@@ -99,7 +103,7 @@ li{
 @media only screen and (max-width: 700px){
 
  h1{
-  font-size: 3rem;
+  font-size: 4rem;
 
  }
 
@@ -111,19 +115,16 @@ li{
 }
 
 h1{
- font-size: 2.5rem;
+ font-size: 3.5rem;
 }
 
-.del-button, .done-button{
- padding: .3rem;
-}
 
 ul{
 align-self: flex-start;
 }
 
 li{
- font-size: 1.2rem;
+ font-size: 2rem;
 }
 
 }
